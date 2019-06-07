@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="SQLite - Emer-Agency-DB">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.15">
+    <root id="1">
+      <ServerVersion>3.25.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="Category"/>
+    <table id="7" parent="2" name="Event"/>
+    <table id="8" parent="2" name="EventCategory"/>
+    <table id="9" parent="2" name="EventOrganization"/>
+    <table id="10" parent="2" name="Notification"/>
+    <table id="11" parent="2" name="Organization"/>
+    <table id="12" parent="2" name="UserEvent"/>
+    <table id="13" parent="2" name="Users"/>
+    <table id="14" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="15" parent="2" name="sqlite_sequence">
+      <System>1</System>
+    </table>
+    <column id="16" parent="6" name="CategoryID">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="6" name="NameCategory">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="18" parent="6" name="Flights_flightID_uindex">
+      <ColNames>CategoryID</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="6" name="Flights_pk">
+      <ColNames>CategoryID</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>Flights_flightID_uindex</UnderlyingIndexName>
+    </key>
+    <column id="20" parent="7" name="EventID">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="21" parent="7" name="manage">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="22" parent="7" name="publish">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="23" parent="7" name="Title">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="24" parent="7" name="Publish_time">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="25" parent="7" name="Status">
+      <Position>6</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <index id="26" parent="7" name="sqlite_autoindex_Event_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EventID</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="7" name="Vecation_pk">
+      <ColNames>EventID</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Event_1</UnderlyingIndexName>
+    </key>
+    <column id="28" parent="8" name="EventID">
+      <Position>1</Position>
+    </column>
+    <column id="29" parent="8" name="CategoryId">
+      <Position>2</Position>
+    </column>
+    <foreign-key id="30" parent="8">
+      <ColNames>EventID</ColNames>
+      <RefTableName>Event</RefTableName>
+      <RefKeyName>Vecation_pk</RefKeyName>
+      <RefColNames>EventID</RefColNames>
+    </foreign-key>
+    <foreign-key id="31" parent="8">
+      <ColNames>CategoryId</ColNames>
+      <RefTableName>Category</RefTableName>
+      <RefKeyName>Flights_pk</RefKeyName>
+      <RefColNames>CategoryID</RefColNames>
+    </foreign-key>
+    <column id="32" parent="9" name="EventId">
+      <Position>1</Position>
+    </column>
+    <column id="33" parent="9" name="OrganizationID">
+      <Position>2</Position>
+    </column>
+    <foreign-key id="34" parent="9">
+      <ColNames>EventId</ColNames>
+      <RefTableName>Event</RefTableName>
+      <RefKeyName>Vecation_pk</RefKeyName>
+      <RefColNames>EventID</RefColNames>
+    </foreign-key>
+    <foreign-key id="35" parent="9">
+      <ColNames>OrganizationID</ColNames>
+      <RefTableName>Organization</RefTableName>
+      <RefColNames>OrganizationId</RefColNames>
+    </foreign-key>
+    <column id="36" parent="10" name="NotificationID">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="10" name="UserId">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="38" parent="10" name="EventId">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="39" parent="10" name="Title">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="10" name="PublishTime">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="10" name="PublishDate">
+      <Position>6</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="42" parent="10" name="Status">
+      <Position>7</Position>
+      <DataType>TEXT|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="10" name="Notification_notificationID_uindex">
+      <ColNames>NotificationID</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="44" parent="10" name="sqlite_autoindex_Notification_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Title
+PublishTime</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="10" name="Notification_pk">
+      <ColNames>Title
+PublishTime</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_Notification_1</UnderlyingIndexName>
+    </key>
+    <column id="46" parent="11" name="OrganizationId">
+      <Position>1</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="47" parent="11" name="OrganizationName">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <index id="48" parent="11" name="sqlite_autoindex_Organization_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>OrganizationId</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="11">
+      <ColNames>OrganizationId</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Organization_1</UnderlyingIndexName>
+    </key>
+    <column id="50" parent="12" name="UserId">
+      <Position>1</Position>
+    </column>
+    <column id="51" parent="12" name="EventId">
+      <Position>2</Position>
+    </column>
+    <column id="52" parent="12" name="Permission">
+      <Position>3</Position>
+      <DataType>TEXT|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="13" name="UserId">
+      <Position>1</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="54" parent="13" name="UserName">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="13" name="OrganizationId">
+      <Position>3</Position>
+    </column>
+    <column id="56" parent="13" name="Password">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="13" name="Rank">
+      <Position>5</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="58" parent="13" name="Email">
+      <Position>6</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="59" parent="13" name="Status">
+      <Position>7</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <index id="60" parent="13" name="sqlite_autoindex_Users_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UserName</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="13">
+      <ColNames>UserName</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_Users_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="62" parent="13">
+      <ColNames>OrganizationId</ColNames>
+      <RefTableName>Organization</RefTableName>
+      <RefColNames>OrganizationId</RefColNames>
+    </foreign-key>
+    <column id="63" parent="14" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="64" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="65" parent="14" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="66" parent="14" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="67" parent="14" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="68" parent="15" name="name">
+      <Position>1</Position>
+    </column>
+    <column id="69" parent="15" name="seq">
+      <Position>2</Position>
+    </column>
+  </database-model>
+</dataSource>
