@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="git added">
-      <change afterPath="$PROJECT_DIR$/src/Model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/AddEvent.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/AddEventController.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="started add event">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MainScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Query.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AddEvent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddEvent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AddEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddEventController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/AddEvent.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="83" column="53" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+            <state relative-caret-position="220">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -135,8 +119,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/AddEventController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-351">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="483">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,8 +243,8 @@
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/View/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/Model/Query.java" />
-        <option value="$PROJECT_DIR$/src/View/AddEventController.java" />
         <option value="$PROJECT_DIR$/src/View/AddEvent.fxml" />
+        <option value="$PROJECT_DIR$/src/View/AddEventController.java" />
       </list>
     </option>
   </component>
@@ -470,7 +457,7 @@
       <workItem from="1559921659300" duration="921000" />
       <workItem from="1559922855810" duration="144000" />
       <workItem from="1559935151348" duration="5280000" />
-      <workItem from="1559967224766" duration="5587000" />
+      <workItem from="1559967224766" duration="6790000" />
     </task>
     <task id="LOCAL-00001" summary="git added">
       <created>1559935737999</created>
@@ -479,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559935737999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="started add event">
+      <created>1559973467134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559973467134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54571000" />
+    <option name="totallyTimeSpent" value="55774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -579,7 +573,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="git added" />
-    <option name="LAST_COMMIT_MESSAGE" value="git added" />
+    <MESSAGE value="started add event" />
+    <option name="LAST_COMMIT_MESSAGE" value="started add event" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,16 +813,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddEvent.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="83" column="53" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+        <state relative-caret-position="220">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddEventController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="483">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

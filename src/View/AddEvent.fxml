@@ -81,7 +81,7 @@
    </TextArea>
    <Label fx:id="erorbaggage1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" styleClass="erorMes" text="*עליך למלא שדה זה" textFill="RED" visible="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
    <Label fx:id="erorisConnection1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" styleClass="erorMes" text="*עליך למלא שדה זה" textFill="RED" visible="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-   <ListView fx:id="list_categories" selectionModel="" prefHeight="300.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+   <ListView fx:id="list_categories" prefHeight="300.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
       </GridPane.margin>

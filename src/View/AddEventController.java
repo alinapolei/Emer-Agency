@@ -21,14 +21,18 @@ public class AddEventController extends Aview {
     ObservableList<Organization> organizations;
     ObservableList<Category> categories;
     public void initialize() {
+        list_categories.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+
         organizations = getController().getAllOrganizations();
         categories = getController().getAllCategories();
         choice_Organization.setItems(organizations);
         choice_categories.setItems(categories);
 
-        list_categories.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        list_categories.setItems(categories);
-        list_categories.setOnMouseClicked(new EventHandler<Event>() {
+        //list_categories.setItems(categories);
+        list_categories.getItems().add("Item 1");
+        list_categories.getItems().add("Item 2");
+        list_categories.getItems().add("Item 3");
+        /*list_categories.setOnMouseClicked(new EventHandler<Event>() {
             @Override
             public void handle(Event event) {
                 ObservableList<Category> selectedItems =  list_categories.getSelectionModel().getSelectedItems();
@@ -39,7 +43,7 @@ public class AddEventController extends Aview {
 
             }
 
-        });
+        });*/
     }
 
     public void saveclicked(MouseEvent mouseEvent) {
