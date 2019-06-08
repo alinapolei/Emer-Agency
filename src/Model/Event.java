@@ -19,6 +19,13 @@ public class Event {
         this.publish_time = publish_time;
         this.status = status;
     }
+    public Event(int manage, int publish, String title, String publish_time, String status) {
+        this.manage = manage;
+        this.publish = publish;
+        this.title = title;
+        this.publish_time = publish_time;
+        this.status = status;
+    }
 
     public int getEventID() {
         return eventID;

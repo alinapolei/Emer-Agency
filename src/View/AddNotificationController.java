@@ -43,7 +43,7 @@ public class AddNotificationController extends Aview {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION,"The Notification is Add!");  //new alert object
                 alert.setResizable(false);
                 Optional<ButtonType> result = alert.showAndWait();
-                Main.switchScene("../View/MainScreen.fxml", Main.getStage(), 620, 400);
+                Main.switchScene("../View/MainScreen.fxml", Main.getStage(), Main.mainWidth, Main.mainHeight);
 
 
 
@@ -56,6 +56,6 @@ public class AddNotificationController extends Aview {
 
     public void Back(ActionEvent actionEvent)
     {
-        Main.switchScene("../View/MainScreen.fxml", Main.getStage(), 620, 400);
+        Main.switchScene("../View/MainScreen.fxml", Main.getStage(), Main.mainWidth, Main.mainHeight);
     }
 }

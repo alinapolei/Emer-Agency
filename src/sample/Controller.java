@@ -1,7 +1,10 @@
 package sample;
 
 import Model.*;
+import com.sun.tools.internal.xjc.model.Model;
 import javafx.collections.ObservableList;
+
+import java.sql.SQLException;
 
 public class Controller {
 
@@ -20,6 +23,14 @@ public class Controller {
 
     public ObservableList<Category> getAllCategories(){return query.getAllCategories();}
     public ObservableList<Organization> getAllOrganizations(){return query.getAllOrganizations();}
+
+    public int insertEvent(Event event, ObservableList<Category> categories, ObservableList<Organization> organizations, Notification initUpdate){
+        return query.insertEvent(event, categories, organizations, initUpdate);
+    }
+
+    public void test(int i, ObservableList selectedItems) throws SQLException {
+        query.insertUsersWithPermissions(i, selectedItems);
+    }
 
     //endregion
 

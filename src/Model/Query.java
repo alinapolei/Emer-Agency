@@ -140,6 +140,13 @@ public class Query
         }
         return null;
     }
+    private ResultSet getAllUsersInOrganization(Connection conn, int oid) throws SQLException {
+        String sql = "SELECT * FROM Users WHERE OrganizationId = "+oid;
+        Statement stmt  = conn.createStatement();
+        ResultSet rs    = stmt.executeQuery(sql);
+        return  rs;
+
+    }
 
     public int notificationSize()
     {
@@ -208,5 +215,75 @@ public class Query
             return observablenotifications;
         }
         return null;
+    }
+
+    //insert event
+    public int insertEvent(Event event, ObservableList<Category> addedCategories, ObservableList<Organization> addedOrganozations, Model.Notification initUpdate){
+        String sql = "INSERT INTO Event (manage, publish, Title, Publish_time ,Status ) VALUES(?,?,?,?,?)";
+        try (
+                Connection conn = connect();
+                PreparedStatement pstmt = conn.prepareStatement(sql))
+        {
+            pstmt.setInt(1,event.getManage());
+            pstmt.setInt(2, event.getPublish());
+            pstmt.setString(3,event.getTitle());
+            pstmt.setString(4,event.getPublish_time());
+            pstmt.setString(5, event.getStatus());
+
+            pstmt.executeUpdate();
+            ResultSet rs = pstmt.getGeneratedKeys();
+            if (rs.next()) {
+                int newId = rs.getInt(1);
+                event.setEventID(newId);
+                insertCategories(newId, addedCategories);
+                insertOrganization(newId, addedOrganozations);
+                initUpdate.setEventId(newId);
+                insert(initUpdate);
+                insertUsersWithPermissions(newId, addedOrganozations);
+            }
+            return 0 ;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 1 ;
+        }
+    }
+
+    public void insertCategories(int eID, ObservableList<Category> list) throws SQLException {
+        for (Category c:list) {
+           String sql = "INSERT INTO EventCategory(EventID, CategoryId) VALUES (?,?)";
+           Connection conn = connect();
+           PreparedStatement pstmt = conn.prepareStatement(sql);
+           pstmt.setInt(1, eID);
+           pstmt.setInt(2, c.id);
+           pstmt.executeUpdate();
+        }
+    }
+    public void insertOrganization(int eID, ObservableList<Organization> list) throws SQLException {
+        for(Organization o:list){
+            String sql = "INSERT INTO EventOrganization(EventId, OrganizationID) VAlUES(?,?)";
+            Connection conn = connect();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, eID);
+            pstmt.setInt(2, o.getId());
+            pstmt.executeUpdate();
+        }
+    }
+    public void insertUsersWithPermissions(int eID, ObservableList<Organization> list) throws SQLException {
+        for(Organization o:list){
+            Connection conn = connect();
+            ResultSet rs = getAllUsersInOrganization(conn, o.getId());
+            while (rs.next()) {
+                String sql = "INSERT INTO UserEvent(UserId, EventId, Permission) VALUES(?,?,?)";
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+                pstmt.setInt(1, rs.getInt("UserId"));
+                pstmt.setInt(2, eID);
+                pstmt.setString(3, "R");
+                pstmt.executeUpdate();
+            }
+            String sql = "INSERT INTO UserEvent(UserId, EventId, Permission) VALUES(1, "+eID+", R)";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.executeUpdate();
+
+        }
     }
 }

@@ -1,4 +1,5 @@
 package View;
+import Model.Notification;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.Event;
@@ -13,8 +14,10 @@ import javafx.scene.input.MouseEvent;
 import sample.Aview;
 import sample.Main;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class AddEventController extends Aview {
 
@@ -102,7 +105,23 @@ public class AddEventController extends Aview {
         }
 
         if(isAllValid){
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            Date date = new Date();
 
+            //add the event to event table
+            //sending notifications?!!!!!
+            Model.Event event = new Model.Event(Integer.valueOf(Main.loggedUser.getUserId()), Integer.valueOf(Main.loggedUser.getUserId()), txt_eventTitle.getText(), dateFormat.format(date), "Active");
+            Model.Notification notification = new Notification(Integer.valueOf(Main.loggedUser.getUserId()), 0, txt_initUpdate.getText(), String.valueOf(date.getTime()), String.valueOf(date.getDate()), "Active");
+            /*int x = getController().insertEvent(event, list_categories.getSelectionModel().getSelectedItems(), list_organizations.getSelectionModel().getSelectedItems(), notification);
+            if(x==0)
+                System.out.println("GOOD");
+            else
+                System.out.println("BAD");*/
+            try {
+                getController().test(343, list_organizations.getSelectionModel().getSelectedItems());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 

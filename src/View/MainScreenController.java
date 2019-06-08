@@ -74,7 +74,7 @@ public class MainScreenController extends Aview
         TableColumn<Event, String> eventStatusCol = new TableColumn<Event, String>("Status");
 
 
-        actionCol1.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        actionCol1.setCellFactory(new PropertyValueFactory<>("DUMMY"));
         Callback<TableColumn<Event, String>, TableCell<Event, String>> cellFactory
                 = new Callback<TableColumn<Event, String>, TableCell<Event, String>>() {
             @Override
@@ -96,7 +96,7 @@ public class MainScreenController extends Aview
                             }
                             btn.setOnAction(event -> {
                                 Main.EventId = getTableView().getItems().get(getIndex()).getEventID();
-                                Main.switchScene("../View/AddNotification.fxml", Main.getStage(), 600, 400);
+                                Main.switchScene("../View/AddNotification.fxml", Main.getStage(), Main.mainWidth, Main.mainHeight);
                             });
                             setGraphic(btn);
                             setText(null);
@@ -108,7 +108,7 @@ public class MainScreenController extends Aview
         };
 
 
-        actionCol2.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        actionCol2.setCellFactory(new PropertyValueFactory<>("DUMMY1"));
         Callback<TableColumn<Event, String>, TableCell<Event, String>> cellFactory1
                 = new Callback<TableColumn<Event, String>, TableCell<Event, String>>() {
             @Override
@@ -125,7 +125,7 @@ public class MainScreenController extends Aview
                         } else {
                             btn.setOnAction(event -> {
                                 Main.EventId = getTableView().getItems().get(getIndex()).getEventID();
-                                Main.switchScene("../View/WatchNotification.fxml", Main.getStage(), 600, 400);
+                                Main.switchScene("../View/WatchNotification.fxml", Main.getStage(), Main.mainWidth, Main.mainHeight);
                             });
                             setGraphic(btn);
                             setText(null);

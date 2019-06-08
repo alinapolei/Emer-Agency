@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="started add event">
-      <change afterPath="$PROJECT_DIR$/src/View/style.css" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add event gui">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e8078cb-e387-492d-95c3-814544437001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e8078cb-e387-492d-95c3-814544437001.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/DataBase/Emer-Agency-DB" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/DataBase/Emer-Agency-DB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Event.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/Model/Query.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/AddNotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/AddNotificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController$2$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/MainScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/WatchNotification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/WatchNotification.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/View/WatchNotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/View/WatchNotificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Emer-Agency/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBase/Emer-Agency-DB" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/Emer-Agency-DB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/AddEvent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddEvent.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/AddEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddEventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AddNotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddNotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MainScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/WatchNotification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/WatchNotification.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/WatchNotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/WatchNotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,53 +111,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/MainScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
-              <folding>
-                <element signature="e#833#1577#0" />
-                <element signature="e#874#1016#1" />
-                <element signature="e#1053#1192#1" />
-                <element signature="e#1238#1386#1" />
-                <element signature="e#1425#1566#1" />
-                <element signature="method#setTableData#0;class#MainScreenController#0" />
-                <element signature="class#2723:4141" />
-                <element signature="method#call#0;class#2723:4141" />
-                <element signature="class#2946:4087" />
-                <element signature="method#updateItem#0;class#2946:4087" />
-                <element signature="e#3234#3350#1" />
-                <element signature="e#3356#4047#1" />
-                <element signature="e#3489#3634#1" />
-                <element signature="e#3679#3931#0" />
-                <element signature="class#4328:5475" />
-                <element signature="method#call#0;class#4328:5475" />
-                <element signature="class#4551:5421" />
-                <element signature="method#updateItem#0;class#4551:5421" />
-                <element signature="e#4843#4959#1" />
-                <element signature="e#4965#5381#1" />
-                <element signature="e#5011#5265#0" />
-                <element signature="e#6677#6721#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/AddEvent.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="119" column="109" selection-start-line="119" selection-start-column="109" selection-end-line="119" selection-end-column="109" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="180" column="5" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+            <state relative-caret-position="350">
+              <caret line="283" column="37" lean-forward="true" selection-start-line="283" selection-start-column="37" selection-end-line="283" selection-end-column="37" />
               <folding>
                 <element signature="method#connect#0;class#Query#0" />
                 <element signature="e#339#366#0" />
@@ -158,8 +128,6 @@
                 <element signature="e#1205#1425#1" />
                 <element signature="e#1444#1489#1" />
                 <element signature="e#1524#1609#0" />
-                <element signature="method#getEventsByUserName#0;class#Query#0" />
-                <element signature="e#0#133#1" />
                 <element signature="e#1959#2114#0" />
                 <element signature="e#2146#2205#0" />
                 <element signature="method#eventtResultSetToObservable#0;class#Query#0" />
@@ -174,11 +142,6 @@
                 <element signature="e#0#76#2" />
                 <element signature="e#3879#4035#0" />
                 <element signature="e#4067#4126#0" />
-                <element signature="method#getAllOrganizations#0;class#Query#0" />
-                <element signature="e#0#32#0" />
-                <element signature="e#4412#4738#0" />
-                <element signature="e#4494#4608#1" />
-                <element signature="e#4766#4817#0" />
                 <element signature="method#notificationSize#0;class#Query#0" />
                 <element signature="e#0#15#0" />
                 <element signature="e#5052#5215#0" />
@@ -200,10 +163,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Notification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="78" column="102" selection-start-line="78" selection-start-column="96" selection-end-line="78" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/AddEventController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,10 +193,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Event">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/UserEvent">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <column-attributes>
+                <column name="rowid" enabled="false" position="-1" />
+              </column-attributes>
             </state>
           </provider>
         </entry>
@@ -223,20 +220,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="128">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/MainScreen.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -253,7 +240,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new TableColumn</find>
+      <find>dummy</find>
       <find>root</find>
+      <find>actionCol1</find>
       <find>insert</find>
     </findStrings>
   </component>
@@ -272,23 +261,24 @@
         <option value="$PROJECT_DIR$/src/Model/User.java" />
         <option value="$PROJECT_DIR$/src/sample/Query.java" />
         <option value="$PROJECT_DIR$/src/sample/Aview.java" />
-        <option value="$PROJECT_DIR$/src/Model/Event.java" />
         <option value="$PROJECT_DIR$/src/View/AddNotification.fxml" />
         <option value="$PROJECT_DIR$/src/Model/Notification.java" />
         <option value="$PROJECT_DIR$/src/View/WatchNotification.fxml" />
-        <option value="$PROJECT_DIR$/src/View/WatchNotificationController.java" />
-        <option value="$PROJECT_DIR$/src/View/AddNotificationController.java" />
         <option value="$PROJECT_DIR$/src/View/LoginForm.fxml" />
-        <option value="$PROJECT_DIR$/src/View/LoginController.java" />
         <option value="$PROJECT_DIR$/src/View/AddEvent.java" />
         <option value="$PROJECT_DIR$/src/View/MainScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/View/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/Model/Organization.java" />
         <option value="$PROJECT_DIR$/src/Model/Category.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/View/style.css" />
         <option value="$PROJECT_DIR$/src/View/AddEvent.fxml" />
+        <option value="$PROJECT_DIR$/src/Model/Event.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/View/AddNotificationController.java" />
+        <option value="$PROJECT_DIR$/src/View/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/View/MainScreenController.java" />
+        <option value="$PROJECT_DIR$/src/View/WatchNotificationController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/View/AddEventController.java" />
         <option value="$PROJECT_DIR$/src/Model/Query.java" />
       </list>
@@ -481,6 +471,16 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@de12211a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@de12211a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@51300ff0" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@de12211a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7c574930" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -505,7 +505,7 @@
       <workItem from="1559921659300" duration="921000" />
       <workItem from="1559922855810" duration="144000" />
       <workItem from="1559935151348" duration="5280000" />
-      <workItem from="1559967224766" duration="15925000" />
+      <workItem from="1559967224766" duration="29088000" />
     </task>
     <task id="LOCAL-00001" summary="git added">
       <created>1559935737999</created>
@@ -528,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559974720166</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add event gui">
+      <created>1559998538084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559998538084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64909000" />
+    <option name="totallyTimeSpent" value="78072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -541,7 +548,7 @@
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.20227729" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.16275954" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -549,8 +556,8 @@
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32963988" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32913387" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.42797783" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39750692" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.27423823" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.24792244" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
@@ -570,7 +577,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="JetGradle" order="7" />
-      <window_info active="true" anchor="right" id="Database" order="8" visible="true" weight="0.32953784" />
+      <window_info active="true" anchor="right" id="Database" order="8" visible="true" weight="0.14735432" />
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="right" id="Ant" order="10" />
     </layout>
@@ -629,15 +636,21 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="git added" />
     <MESSAGE value="started add event" />
-    <option name="LAST_COMMIT_MESSAGE" value="started add event" />
+    <MESSAGE value="add event gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add event gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/View/AddEventController.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/Model/Query.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/Query.java</url>
+          <line>271</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -648,6 +661,21 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>rs.getInt(&quot;UserId&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>date.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>date</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>list_categories.getSelectionModel().getSelectedItems().size()</expression-string>
         <language-id>JAVA</language-id>
@@ -674,13 +702,6 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/sql/PreparedStatement.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/Model.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Query.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Aview.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -691,41 +712,8 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/TableView.java" />
-    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="5f7231c5-1653-4231-a482-311aa84d2ce4">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e8078cb-e387-492d-95c3-814544437001/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/AddNotificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/WatchNotificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="61" column="69" selection-start-line="61" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="139" selection-start-line="12" selection-start-column="139" selection-end-line="12" selection-end-column="139" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/WatchNotification.fxml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -746,34 +734,8 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.controls/javafx/scene/control/ListView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -781,14 +743,6 @@
           <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MainScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Organization">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -843,44 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MainScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
-          <folding>
-            <element signature="e#833#1577#0" />
-            <element signature="e#874#1016#1" />
-            <element signature="e#1053#1192#1" />
-            <element signature="e#1238#1386#1" />
-            <element signature="e#1425#1566#1" />
-            <element signature="method#setTableData#0;class#MainScreenController#0" />
-            <element signature="class#2723:4141" />
-            <element signature="method#call#0;class#2723:4141" />
-            <element signature="class#2946:4087" />
-            <element signature="method#updateItem#0;class#2946:4087" />
-            <element signature="e#3234#3350#1" />
-            <element signature="e#3356#4047#1" />
-            <element signature="e#3489#3634#1" />
-            <element signature="e#3679#3931#0" />
-            <element signature="class#4328:5475" />
-            <element signature="method#call#0;class#4328:5475" />
-            <element signature="class#4551:5421" />
-            <element signature="method#updateItem#0;class#4551:5421" />
-            <element signature="e#4843#4959#1" />
-            <element signature="e#4965#5381#1" />
-            <element signature="e#5011#5265#0" />
-            <element signature="e#6677#6721#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -888,25 +804,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.base/javafx/event/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="128">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="21" selection-start-column="79" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddEvent.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="119" column="109" selection-start-line="119" selection-start-column="109" selection-end-line="119" selection-end-column="109" />
+        <state>
+          <caret line="113" column="12" lean-forward="true" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MainScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AddNotificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="100" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="27" column="112" selection-start-line="27" selection-start-column="112" selection-end-line="27" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MainScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="127" column="131" selection-start-line="127" selection-start-column="131" selection-end-line="127" selection-end-column="131" />
+          <folding>
+            <element signature="e#833#1577#0" />
+            <element signature="e#874#1016#1" />
+            <element signature="e#1053#1192#1" />
+            <element signature="e#1238#1386#1" />
+            <element signature="e#1425#1566#1" />
+            <element signature="e#3489#3634#1" />
+            <element signature="e#4843#4959#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/WatchNotificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.management/javax/management/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/EventCategory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="rowid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Notification">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="rowid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/EventOrganization">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="rowid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="78" column="102" selection-start-line="78" selection-start-column="96" selection-end-line="78" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Event">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/Users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddEventController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -915,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="180" column="5" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+        <state relative-caret-position="350">
+          <caret line="283" column="37" lean-forward="true" selection-start-line="283" selection-start-column="37" selection-end-line="283" selection-end-column="37" />
           <folding>
             <element signature="method#connect#0;class#Query#0" />
             <element signature="e#339#366#0" />
@@ -930,8 +1012,6 @@
             <element signature="e#1205#1425#1" />
             <element signature="e#1444#1489#1" />
             <element signature="e#1524#1609#0" />
-            <element signature="method#getEventsByUserName#0;class#Query#0" />
-            <element signature="e#0#133#1" />
             <element signature="e#1959#2114#0" />
             <element signature="e#2146#2205#0" />
             <element signature="method#eventtResultSetToObservable#0;class#Query#0" />
@@ -946,11 +1026,6 @@
             <element signature="e#0#76#2" />
             <element signature="e#3879#4035#0" />
             <element signature="e#4067#4126#0" />
-            <element signature="method#getAllOrganizations#0;class#Query#0" />
-            <element signature="e#0#32#0" />
-            <element signature="e#4412#4738#0" />
-            <element signature="e#4494#4608#1" />
-            <element signature="e#4766#4817#0" />
             <element signature="method#notificationSize#0;class#Query#0" />
             <element signature="e#0#15#0" />
             <element signature="e#5052#5215#0" />
@@ -967,6 +1042,18 @@
             <element signature="e#6990#7271#1" />
             <element signature="e#7306#7485#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e8078cb-e387-492d-95c3-814544437001/schema/main/table/UserEvent">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="770c2384-ae6b-402a-a2e5-97f6e84d945c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="rowid" enabled="false" position="-1" />
+          </column-attributes>
         </state>
       </provider>
     </entry>

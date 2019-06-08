@@ -59,7 +59,7 @@ public class WatchNotificationController extends Aview
 
     public void Back(ActionEvent actionEvent)
     {
-        Main.switchScene("../View/MainScreen.fxml", Main.getStage(), 620, 400);
+        Main.switchScene("../View/MainScreen.fxml", Main.getStage(), Main.mainWidth, Main.mainHeight);
 
     }
 }
