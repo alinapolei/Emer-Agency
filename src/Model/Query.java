@@ -122,24 +122,24 @@ public class Query
         return null;
     }
     public ObservableList<Organization> getAllOrganizations()
-{
-    String sql = "SELECT * FROM Organization";
-    try (Connection conn = connect();
-         Statement stmt  = conn.createStatement();
-         ResultSet rs    = stmt.executeQuery(sql)){
+    {
+        String sql = "SELECT * FROM Organization limit 3";
+        try (Connection conn = connect();
+             Statement stmt  = conn.createStatement();
+             ResultSet rs    = stmt.executeQuery(sql)){
 
-        List<Organization> orgs = new ArrayList<>();
-        while (rs.next()) {
-            orgs.add(new Organization(rs.getInt("OrganizationId"), rs.getString("OrganizationName")));
+            List<Organization> orgs = new ArrayList<>();
+            while (rs.next()) {
+                orgs.add(new Organization(rs.getInt("OrganizationId"), rs.getString("OrganizationName")));
+            }
+            ObservableList<Organization> observablOrgs = FXCollections.observableArrayList(orgs);
+            return observablOrgs;
         }
-        ObservableList<Organization> observablOrgs = FXCollections.observableArrayList(orgs);
-        return observablOrgs;
+        catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
-    catch (SQLException e) {
-        System.out.println(e.getMessage());
-    }
-    return null;
-}
 
     public int notificationSize()
     {

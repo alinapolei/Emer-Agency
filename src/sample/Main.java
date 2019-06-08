@@ -63,7 +63,7 @@ public class Main extends Application {
         Stage stage = new Stage();
         stage.setTitle(title);
         Scene scene = new Scene(root, width, height);
-        //scene.getStylesheets().add(Main.class.getResource("../View/Style.css").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("../View/style.css").toExternalForm());
         stage.setScene(scene);
         stage.setResizable(false);
         stage.initModality(Modality.WINDOW_MODAL);

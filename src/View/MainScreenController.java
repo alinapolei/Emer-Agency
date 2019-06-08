@@ -157,7 +157,7 @@ public class MainScreenController extends Aview
             Parent root = (Parent)fxmlLoader.load();
             //AddEventController addEventController = fxmlLoader.getController();
             //addEventController.loadData();
-            Main.newStage(root, "AddEvent", 400, 400, Title.getScene().getWindow());
+            Main.newStage(root, "AddEvent", 400, 600, Title.getScene().getWindow());
         } catch (IOException e) {
             e.printStackTrace();
         }

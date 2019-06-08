@@ -1,52 +1,109 @@
 package View;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import Model.Category;
 import Model.Organization;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import sample.Aview;
+import sample.Main;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AddEventController extends Aview {
 
     @FXML
     public TextField txt_eventTitle;
-    public ChoiceBox choice_categories;
-    public ChoiceBox choice_Organization;
     public TextArea txt_initUpdate;
+    public ListView list_organizations;
     public ListView list_categories;
 
     ObservableList<Organization> organizations;
     ObservableList<Category> categories;
+    List<Category> selectedCategories= new ArrayList<>();
+    List<Organization> selectedOrganizations= new ArrayList<>();
     public void initialize() {
-        list_categories.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-
         organizations = getController().getAllOrganizations();
         categories = getController().getAllCategories();
-        choice_Organization.setItems(organizations);
-        choice_categories.setItems(categories);
-
-        //list_categories.setItems(categories);
-        list_categories.getItems().add("Item 1");
-        list_categories.getItems().add("Item 2");
-        list_categories.getItems().add("Item 3");
-        /*list_categories.setOnMouseClicked(new EventHandler<Event>() {
+        list_organizations.setItems(organizations);
+        list_organizations.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        list_organizations.getFocusModel().focus(0);
+        list_organizations.addEventFilter(MouseEvent.MOUSE_PRESSED, evt -> {
+            handleMultipleSelection(evt, list_organizations);
+        });
+        /*list_organizations.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             @Override
-            public void handle(Event event) {
-                ObservableList<Category> selectedItems =  list_categories.getSelectionModel().getSelectedItems();
-
-                for(Category s : selectedItems){
-                    System.out.println("selected item " + s);
-                }
-
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                System.out.println("ListView selection changed from oldValue = "
+                        + oldValue + " to newValue = " + newValue);
             }
-
         });*/
+
+        list_categories.setItems(categories);
+        list_categories.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        list_categories.getFocusModel().focus(0);
+        list_categories.addEventFilter(MouseEvent.MOUSE_PRESSED, evt -> {
+            handleMultipleSelection(evt, list_categories);
+        });
+    }
+
+    private void handleMultipleSelection(MouseEvent evt, ListView list_categories) {
+        Node node = evt.getPickResult().getIntersectedNode();
+        while (node != null && node != list_categories && !(node instanceof ListCell)) {
+            node = node.getParent();
+        }
+        if (node instanceof ListCell) {
+            evt.consume();
+            ListCell cell = (ListCell) node;
+            ListView lv = cell.getListView();
+            lv.requestFocus();
+            if (!cell.isEmpty()) {
+                int index = cell.getIndex();
+                if (cell.isSelected()) {
+                    lv.getSelectionModel().clearSelection(index);
+                } else {
+                    lv.getSelectionModel().select(index);
+                }
+            }
+        }
     }
 
     public void saveclicked(MouseEvent mouseEvent) {
+        boolean isAllValid = true;
+        if (txt_eventTitle.getText() != "" && txt_eventTitle.getLength() != 0 )
+            txt_eventTitle.getStyleClass().remove("error");
+        else {
+            txt_eventTitle.getStyleClass().add("error");
+            isAllValid = false;
+        }
+        if(list_categories.getSelectionModel().getSelectedItems().size() != 0)
+            list_categories.getStyleClass().remove("error");
+        else {
+            list_categories.getStyleClass().add("error");
+            isAllValid = false;
+        }
+        if(list_organizations.getSelectionModel().getSelectedItems().size() != 0)
+            list_organizations.getStyleClass().remove("error");
+        else {
+            list_organizations.getStyleClass().add("error");
+            isAllValid = false;
+        }
+        if(txt_initUpdate.getText() != "" && txt_initUpdate.getText().length() != 0)
+            txt_initUpdate.getStyleClass().remove("error");
+        else {
+            txt_initUpdate.getStyleClass().add("error");
+            isAllValid = false;
+        }
+
+        if(isAllValid){
+
+        }
     }
 
     public void cancelclicked(MouseEvent mouseEvent) {
