@@ -86,6 +86,25 @@ public class Query
         return null;
     }
 
+    public ObservableList<Category> getAllCategories()
+    {
+        String sql = "SELECT * FROM Category";
+        try (Connection conn = connect();
+             Statement stmt  = conn.createStatement();
+             ResultSet rs    = stmt.executeQuery(sql)){
+
+            List<Category> categories = new ArrayList<>();
+            while (rs.next()) {
+                categories.add(new Category(rs.getInt("CategoryID"), rs.getString("NameCategory")));
+            }
+            ObservableList<Category> observablCategories = FXCollections.observableArrayList(categories);
+            return observablCategories;
+        }
+        catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 
     public String getOrganizationByUserName(String orgId)
     {
@@ -102,6 +121,25 @@ public class Query
         }
         return null;
     }
+    public ObservableList<Organization> getAllOrganizations()
+{
+    String sql = "SELECT * FROM Organization";
+    try (Connection conn = connect();
+         Statement stmt  = conn.createStatement();
+         ResultSet rs    = stmt.executeQuery(sql)){
+
+        List<Organization> orgs = new ArrayList<>();
+        while (rs.next()) {
+            orgs.add(new Organization(rs.getInt("OrganizationId"), rs.getString("OrganizationName")));
+        }
+        ObservableList<Organization> observablOrgs = FXCollections.observableArrayList(orgs);
+        return observablOrgs;
+    }
+    catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+    return null;
+}
 
     public int notificationSize()
     {

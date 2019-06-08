@@ -25,7 +25,7 @@ public class LoginController extends Aview {
                     erorm2.setText("");
                     Main.loggedUser = rs;
 
-                    Main.switchScene("../View/MainScreen.fxml", Main.getStage(), 620, 400);
+                    Main.switchScene("../View/MainScreen.fxml", Main.getStage(), 660, 430);
                 } else {
                     erorm2.setText("*שם משתמש או סיסמא לא נכונים");
                 }

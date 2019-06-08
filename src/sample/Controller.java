@@ -18,6 +18,8 @@ public class Controller {
 
     public ObservableList<Notification> getNotificationByUserName() { return query.getNotificationByUserName();}
 
+    public ObservableList<Category> getAllCategories(){return query.getAllCategories();}
+    public ObservableList<Organization> getAllOrganizations(){return query.getAllOrganizations();}
 
     //endregion
 

@@ -4,8 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import Model.* ;
+import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -55,6 +57,20 @@ public class Main extends Application {
         stage.centerOnScreen();
         //stage.getScene().getStylesheets().add(Main.class.getResource("../View/Style.css").toExternalForm());
 
+    }
+
+    public static Stage newStage(Parent root, String title, int width, int height, Window window){
+        Stage stage = new Stage();
+        stage.setTitle(title);
+        Scene scene = new Scene(root, width, height);
+        //scene.getStylesheets().add(Main.class.getResource("../View/Style.css").toExternalForm());
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initOwner(window);
+        stage.show();
+
+        return stage;
     }
 
 }
